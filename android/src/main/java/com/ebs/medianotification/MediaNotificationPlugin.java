@@ -38,7 +38,17 @@ public class MediaNotificationPlugin implements MethodCallHandler {
               show(title, author, play);
               result.success(null);
               break;
-            case "hide":
+          case "play":
+              play();
+              result.success(null);
+              break;
+
+          case "pause":
+              pause();
+              result.success(null);
+              break;
+
+            case "hide_media_notification":
               hide();
               result.success(null);
               break;
@@ -53,6 +63,7 @@ public class MediaNotificationPlugin implements MethodCallHandler {
           @Override
           public void success(Object o) {
               // this will be called with o = "some string"
+              System.out.println(" action: ");
           }
 
           @Override
@@ -75,6 +86,14 @@ public class MediaNotificationPlugin implements MethodCallHandler {
 
       nPanel = new NotificationPanel(registrar.context(), title, author, play);
   }
+
+  static void pause(){
+      nPanel.setPlay(false);
+  }
+
+    static void play(){
+        nPanel.setPlay(true);
+    }
 
   private void hide() {
       nPanel.notificationCancel();
