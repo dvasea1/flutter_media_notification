@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
     String platformVersion;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      platformVersion = await Medianotification.platformVersion;
+    // Medianotification.show_notification("title", "subtitle", 100, 200);
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
@@ -56,7 +56,7 @@ class _MyAppState extends State<MyApp> {
               child: Container(width: 100, height: 100, color: Colors.red,),
               onTap: () async {
                 debugPrint('click');
-                Medianotification.showDialog;
+                Medianotification.show_notification("title", "subtitle", 100, 100);
               },
             )
           ],
