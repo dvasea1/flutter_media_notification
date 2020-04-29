@@ -33,10 +33,13 @@ public class NotificationPanel {
     }
 
     void showNotif(){
+        int smallIcon = parent.getResources().getIdentifier(
+                "ic_notification_icon", "drawable", parent.getPackageName());
+
         nBuilder = new NotificationCompat.Builder(parent, "medianotification")
                 .setContentTitle(this.title)
                 .setContentText(this.author)
-                .setSmallIcon(R.drawable.ic_stat_music_note)
+                .setSmallIcon(smallIcon)
                 .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
                 .setOngoing(true)
                 .setOnlyAlertOnce(true)
