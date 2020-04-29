@@ -1,13 +1,32 @@
+import 'dart:ui';
+
 import 'package:flutter/services.dart';
 
 class Medianotification {
   static const MethodChannel _channel =
       const MethodChannel('medianotification');
 
-  /*static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
-    return version;
-  }*/
+  static List<Function> _onCallbacks = [];
+
+
+  static void listen_notification_events(Function callback) {
+    _onCallbacks.add(callback);
+    _channel.setMethodCallHandler(_handleMethod);
+  }
+
+
+  static Future<dynamic> _handleMethod(MethodCall call) async {
+    switch (call.method) {
+      case 'onPlay':
+        for (var callback in _onCallbacks) callback("play");
+        break;
+      case 'onPause':
+        for (var callback in _onCallbacks) callback("pause");
+        break;
+      default:
+        throw ('method not defined');
+    }
+  }
 
   static void show_notification(
       String title, String subtitle, int currentProgress, int totalDuration) {
@@ -35,5 +54,5 @@ class Medianotification {
     _channel.invokeMethod('pause');
   }
 
-  static void listen_notification_events(Function onPlayClick) {}
+
 }
