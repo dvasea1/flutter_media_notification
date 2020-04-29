@@ -7,9 +7,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.RemoteViews;
 import android.view.KeyEvent;
-
+import android.graphics.Color;
 import androidx.core.app.NotificationCompat;
-
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 /**
  * Created by dmitry on 14.08.18.
  */
@@ -35,11 +36,13 @@ public class NotificationPanel {
     void showNotif(){
         int smallIcon = parent.getResources().getIdentifier(
                 "ic_notification_icon", "drawable", parent.getPackageName());
-
+        Bitmap icon = BitmapFactory.decodeResource(parent.getResources(), smallIcon);
         nBuilder = new NotificationCompat.Builder(parent, "medianotification")
                 .setContentTitle(this.title)
                 .setContentText(this.author)
+                .setLargeIcon(icon)
                 .setSmallIcon(smallIcon)
+
                 .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
                 .setOngoing(true)
                 .setOnlyAlertOnce(true)
@@ -63,6 +66,7 @@ public class NotificationPanel {
         }
 
         Notification notification = nBuilder.build();
+
 
         nManager = (NotificationManager) parent.getSystemService(Context.NOTIFICATION_SERVICE);
         nManager.notify(1, notification);

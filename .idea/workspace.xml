@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="113cf00b-1c44-4bd6-a87f-05e16657071a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/drawable/ic_notification_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/example/android/app/src/main/res/drawable/ic_notification_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/java/com/ebs/medianotification/NotificationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/ebs/medianotification/NotificationPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/res/drawable-hdpi/ic_stat_music_note.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/res/drawable/music_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/res/drawable/ic_notification_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/android/src/main/java/com/ebs/medianotification/NotificationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/android/src/main/java/com/ebs/medianotification/NotificationPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/android/src/main/res/drawable-hdpi/ic_stat_music_note.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/android/src/main/res/drawable/music_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/android/src/main/res/drawable/ic_notification_icon.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,12 +31,14 @@
   <component name="PropertiesComponent">
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/android/src/main/kotlin/com/ebs/medianotification" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/android/src/main/res/drawable-hdpi" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/android/src/main/res/drawable-hdpi" />
+      <recent name="$PROJECT_DIR$/example/android/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/android/src/main/kotlin/com/ebs/medianotification" />
     </key>
   </component>
