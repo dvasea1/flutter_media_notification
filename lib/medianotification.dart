@@ -26,7 +26,7 @@ class Medianotification {
 
   static void listen_notification_events(Function callback) {
     _onCallbacks.add(callback);
-    _channel.setMethodCallHandler(_handleMethod);
+   // _channel.setMethodCallHandler(_handleMethod);
     _channel.setMethodCallHandler(_mediaNotificationStateHandler);
   }
 
@@ -38,13 +38,19 @@ class Medianotification {
       case "pause":
         for (var callback in _onCallbacks) callback("pause");
         break;
+      case 'onPlay':
+        for (var callback in _onCallbacks) callback("play");
+        break;
+      case 'onPause':
+        for (var callback in _onCallbacks) callback("pause");
+        break;
       default:
         throw new ArgumentError('Unknown method ${call.method} ');
     }
 
   }
 
-  static Future<dynamic> _handleMethod(MethodCall call) async {
+/*  static Future<dynamic> _handleMethod(MethodCall call) async {
     switch (call.method) {
       case 'onPlay':
         for (var callback in _onCallbacks) callback("play");
@@ -55,7 +61,7 @@ class Medianotification {
       default:
         throw ('method not defined');
     }
-  }
+  }*/
 
   static void show_notification(
       String title, String subtitle, int currentProgress, int totalDuration) {

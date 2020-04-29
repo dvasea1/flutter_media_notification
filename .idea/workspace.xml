@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="113cf00b-1c44-4bd6-a87f-05e16657071a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/ios/Classes/MedianotificationPlugin.h" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/ios/Classes/MediaNotificationPlugin.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/ios/Classes/MedianotificationPlugin.m" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/ios/Classes/MediaNotificationPlugin.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/ios/Classes/SwiftMedianotificationPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/ios/Classes/SwiftMediaNotificationPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/MedianotificationPlugin.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/MediaNotificationPlugin.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/MedianotificationPlugin.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/MediaNotificationPlugin.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftMedianotificationPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftMediaNotificationPlugin.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/medianotification.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/medianotification.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
