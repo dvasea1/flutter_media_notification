@@ -50,6 +50,7 @@ public class SwiftMedianotificationPlugin: NSObject, FlutterPlugin {
             let audioSession = AVAudioSession.sharedInstance()
             try audioSession.setActive(false)
         } catch _ { }
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
     }
     
     private func setupRemoteTransportControls() {
@@ -58,12 +59,14 @@ public class SwiftMedianotificationPlugin: NSObject, FlutterPlugin {
         
         // Add handler for Play Command
         commandCenter.playCommand.addTarget { event in
+            print("play click")
             return .success
             
         }
         
         // Add handler for Pause Command
         commandCenter.pauseCommand.addTarget { event in
+              print("pause click")
             return .success
             
         }
