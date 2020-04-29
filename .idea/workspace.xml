@@ -4,26 +4,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="113cf00b-1c44-4bd6-a87f-05e16657071a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/ebs/medianotification/MediaNotificationPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/ebs/medianotification/MediaNotificationPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/ebs/medianotification/NotificationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/ebs/medianotification/NotificationPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/ebs/medianotification/NotificationReturnSlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/ebs/medianotification/NotificationReturnSlot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/android/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/android/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/android/src/main/java/com/ebs/medianotification/MediaNotificationPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/android/src/main/java/com/ebs/medianotification/MediaNotificationPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/android/src/main/java/com/ebs/medianotification/NotificationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/android/src/main/java/com/ebs/medianotification/NotificationPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/android/src/main/java/com/ebs/medianotification/NotificationReturnSlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/android/src/main/java/com/ebs/medianotification/NotificationReturnSlot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/lib/medianotification.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/lib/medianotification.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/medianotification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/medianotification.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/medianotification.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/medianotification.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medianotification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/medianotification.iml" afterDir="false" />
-    </list>
+    <list default="true" id="113cf00b-1c44-4bd6-a87f-05e16657071a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

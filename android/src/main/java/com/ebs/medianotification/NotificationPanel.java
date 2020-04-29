@@ -34,8 +34,8 @@ public class NotificationPanel {
 
     void showNotif(){
         nBuilder = new NotificationCompat.Builder(parent, "medianotification")
-                .setContentTitle("description.getTitle()")
-                .setContentText("description.getSubtitle()")
+                .setContentTitle(this.title)
+                .setContentText(this.author)
                 .setSmallIcon(R.drawable.ic_stat_music_note)
                 .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
                 .setOngoing(true)
