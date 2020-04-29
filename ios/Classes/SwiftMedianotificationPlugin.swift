@@ -26,12 +26,17 @@ public class SwiftMedianotificationPlugin: NSObject, FlutterPlugin {
                 , currentProgress: parsedData["currentProgress"] as! Int, totalDuration: parsedData["totalDuration"] as! Int)
         }
         else if (call.method == "hide_media_notification") {
-           stopAudioSession()
+            stopAudioSession()
+        }
+        else if (call.method == "change_notification_progress") {
+            let parsedData = call.arguments as! [String: Any]
+            updateInfoPanelOnTime(currentProgress: parsedData["currentProgress"] as! Int)
         }
         else if (call.method == "play") {
-            startAudioSession()
-            setupRemoteTransportControls()
-        
+            updateInfoPanelOnPlay()
+        }
+        else if (call.method == "pause") {
+            updateInfoPanelOnPause()
         }
     }
     
@@ -44,7 +49,7 @@ public class SwiftMedianotificationPlugin: NSObject, FlutterPlugin {
             try audioSession.setActive(true)
         } catch _ { }
     }
-
+    
     private func stopAudioSession(){
         do {
             let audioSession = AVAudioSession.sharedInstance()
@@ -66,7 +71,7 @@ public class SwiftMedianotificationPlugin: NSObject, FlutterPlugin {
         
         // Add handler for Pause Command
         commandCenter.pauseCommand.addTarget { event in
-              print("pause click")
+            print("pause click")
             return .success
             
         }
@@ -91,10 +96,26 @@ public class SwiftMedianotificationPlugin: NSObject, FlutterPlugin {
     }
     
     
-    private func updateInfoPanelOnPlay(currentProgress: Int) {
+    private func updateInfoPanelOnTime(currentProgress: Int) {
         
         self.nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = currentProgress
         self.nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] = 1
+        
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = self.nowPlayingInfo
+    }
+    
+    private func updateInfoPanelOnPlay() {
+        
+        // self.nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = currentProgress
+        self.nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] = 1
+        
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = self.nowPlayingInfo
+    }
+    
+    private func updateInfoPanelOnPause() {
+        
+        //self.nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = currentProgress
+        self.nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] = 0
         
         MPNowPlayingInfoCenter.default().nowPlayingInfo = self.nowPlayingInfo
     }
