@@ -1,4 +1,4 @@
-#import "MedianotificationPlugin.h"
+#import "MediaNotificationPlugin.h"
 #if __has_include(<medianotification/medianotification-Swift.h>)
 #import <medianotification/medianotification-Swift.h>
 #else
@@ -8,8 +8,8 @@
 #import "medianotification-Swift.h"
 #endif
 
-@implementation MedianotificationPlugin
+@implementation MediaNotificationPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
-  [SwiftMedianotificationPlugin registerWithRegistrar:registrar];
+  [SwiftMediaNotificationPlugin registerWithRegistrar:registrar];
 }
 @end

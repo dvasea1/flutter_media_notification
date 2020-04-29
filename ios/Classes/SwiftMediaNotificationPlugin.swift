@@ -4,13 +4,13 @@ import Foundation
 import AVFoundation
 import MediaPlayer
 
-public class SwiftMedianotificationPlugin: NSObject, FlutterPlugin {
+public class SwiftMediaNotificationPlugin: NSObject, FlutterPlugin {
     
     static var channel: FlutterMethodChannel?
     
     public static func register(with registrar: FlutterPluginRegistrar) {
         channel = FlutterMethodChannel(name: "medianotification", binaryMessenger: registrar.messenger())
-        let instance = SwiftMedianotificationPlugin()
+        let instance = SwiftMediaNotificationPlugin()
         if let channel = channel {
             registrar.addMethodCallDelegate(instance, channel: channel)
         }
@@ -70,7 +70,7 @@ public class SwiftMedianotificationPlugin: NSObject, FlutterPlugin {
         // Add handler for Play Command
         commandCenter.playCommand.addTarget { event in
             print("play click")
-            if let channel = SwiftMedianotificationPlugin.channel {
+            if let channel = SwiftMediaNotificationPlugin.channel {
                 channel.invokeMethod("onPlay", arguments: nil)
             }
             
@@ -81,7 +81,7 @@ public class SwiftMedianotificationPlugin: NSObject, FlutterPlugin {
         // Add handler for Pause Command
         commandCenter.pauseCommand.addTarget { event in
             print("pause click")
-            if let channel = SwiftMedianotificationPlugin.channel {
+            if let channel = SwiftMediaNotificationPlugin.channel {
                 channel.invokeMethod("onPause", arguments: nil)
             }
             return .success
