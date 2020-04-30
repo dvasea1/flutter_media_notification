@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="113cf00b-1c44-4bd6-a87f-05e16657071a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/medianotification/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/medianotification.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/medianotification.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medianotification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/medianotification.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +16,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="4707ba907d24" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_28" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
