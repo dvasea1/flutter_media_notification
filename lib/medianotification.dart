@@ -2,22 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
-/*enum MediaNotificationState {
-  /// notification is shown, clicking on [play] icon
-  /// [pause] will result in exception.
-  PLAY,
-  /// Currently playing notification, The user can [pause], [prev] or [next] the
-  /// playback by clicking on action btns.
-  PAUSE,
-  /// Play previous media action
-  PREV,
-  /// Play next media action
-  NEXT,
-  /// app is in backgroud, call for select and open by click on media nofiticaion
-  ///
-  SELECT,
-  STOPPED
-}*/
+
 
 class Medianotification {
   static const MethodChannel _channel =

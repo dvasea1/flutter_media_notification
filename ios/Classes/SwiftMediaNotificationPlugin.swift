@@ -61,6 +61,10 @@ public class SwiftMediaNotificationPlugin: NSObject, FlutterPlugin {
             try audioSession.setActive(false)
         } catch _ { }
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
+        
+         let commandCenter = MPRemoteCommandCenter.shared()
+        commandCenter.playCommand.removeTarget(nil)
+        commandCenter.pauseCommand.removeTarget(nil)
     }
     
     private func setupRemoteTransportControls() {
@@ -87,6 +91,7 @@ public class SwiftMediaNotificationPlugin: NSObject, FlutterPlugin {
             return .success
             
         }
+        
     }
     
     private func setupNowPlayingInfoPanel(title: String = "", subtitle: String = "", currentProgress: Int, totalDuration: Int) {
