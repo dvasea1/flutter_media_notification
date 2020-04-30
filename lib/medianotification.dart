@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 /*enum MediaNotificationState {
   /// notification is shown, clicking on [play] icon
@@ -26,6 +27,7 @@ class Medianotification {
 
   static void listen_notification_events(Function callback) {
     _onCallbacks.add(callback);
+    debugPrint("callbacks count is "+_onCallbacks.length.toString());
     _channel.setMethodCallHandler(_mediaNotificationStateHandler);
   }
 
