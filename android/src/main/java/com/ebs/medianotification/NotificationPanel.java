@@ -47,7 +47,7 @@ public class NotificationPanel {
                 .setOngoing(true)
                 .setOnlyAlertOnce(true)
                 .setVibrate(new long[]{0L})
-                .setStyle(new androidx.media.app.NotificationCompat.MediaStyle())
+                .setStyle(new androidx.media.app.NotificationCompat.MediaStyle().setShowActionsInCompactView(0))
                 .setSound(null);
 
         Intent intent = new Intent(parent, NotificationReturnSlot.class)
