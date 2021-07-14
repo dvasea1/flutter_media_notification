@@ -16,6 +16,6 @@ void main() {
     await tester.pumpWidget(MyApp());
 
     // Verify that platform version is retrieved.
-   
+
   });
 }
