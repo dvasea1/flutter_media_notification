@@ -12,7 +12,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
 
   @override
   void initState() {
@@ -38,7 +37,6 @@ class _MyAppState extends State<MyApp> {
       debugPrint("value is "+value);
     });
     setState(() {
-      _platformVersion = platformVersion;
     });
   }
 
@@ -52,7 +50,7 @@ class _MyAppState extends State<MyApp> {
         body: Column(
           children: <Widget>[
             Center(
-              child: Text('Running on: $_platformVersion\n'),
+              child: Text('Running on: '),
             ),
             InkWell(
               child: Container(width: 100, height: 100, color: Colors.red, child: Text("Show"),),
@@ -79,7 +77,9 @@ class _MyAppState extends State<MyApp> {
               child: Container(width: 100, height: 100, color: Colors.red, child: Text("Hide"),),
               onTap: () async {
                 debugPrint('hide');
-                Medianotification.hide_notification();
+                Medianotification.hide_notification((){
+
+                });
               },
             )
           ],
