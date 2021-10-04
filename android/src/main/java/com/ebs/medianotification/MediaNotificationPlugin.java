@@ -75,16 +75,22 @@ public class MediaNotificationPlugin implements MethodCallHandler {
   }
 
   public static void show(String title, String author, boolean play) {
-      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-          int importance = NotificationManager.IMPORTANCE_DEFAULT;
-          NotificationChannel channel = new NotificationChannel(CHANNEL_ID, CHANNEL_ID, importance);
-          channel.enableVibration(false);
-          channel.setSound(null, null);
-          NotificationManager notificationManager = registrar.context().getSystemService(NotificationManager.class);
-          notificationManager.createNotificationChannel(channel);
+      try{
+          if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+              int importance = NotificationManager.IMPORTANCE_DEFAULT;
+              NotificationChannel channel = new NotificationChannel(CHANNEL_ID, CHANNEL_ID, importance);
+              channel.enableVibration(false);
+              channel.setSound(null, null);
+              NotificationManager notificationManager = registrar.context().getSystemService(NotificationManager.class);
+              notificationManager.createNotificationChannel(channel);
+          }
+
+          nPanel = new NotificationPanel(registrar.context(), title, author, play);
+      } catch (Exception e) {
+          e.printStackTrace();
       }
 
-      nPanel = new NotificationPanel(registrar.context(), title, author, play);
+
   }
 
   static void pause(){
