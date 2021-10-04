@@ -25,18 +25,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="113cf00b-1c44-4bd6-a87f-05e16657071a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/android/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/res/drawable/ic_notification_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/res/drawable/ic_notification_icon.png" afterDir="false" />
-    </list>
+    <list default="true" id="113cf00b-1c44-4bd6-a87f-05e16657071a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,12 +86,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="461" y="152" key="SettingsEditor" timestamp="1626260368385">
-      <screen x="0" y="25" width="1920" height="1114" />
-    </state>
-    <state x="461" y="152" key="SettingsEditor/0.25.1920.1114/-1920.304.1920.1055@0.25.1920.1114" timestamp="1626260368385" />
-    <state x="461" y="159" key="SettingsEditor/0.25.1920.1175/-1920.304.1920.994@0.25.1920.1175" timestamp="1626260231752" />
   </component>
 </project>
