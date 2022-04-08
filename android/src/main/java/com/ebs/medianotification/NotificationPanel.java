@@ -55,7 +55,20 @@ public class NotificationPanel {
                 .putExtra("title", this.title)
                 .putExtra("author", this.author)
                 .putExtra("action", !this.play ? "play" : "pause");
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(parent, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent;
+
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            pendingIntent = = PendingIntent.getBroadcast(parent, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+
+          
+
+        }else {
+            pendingIntent = = PendingIntent.getBroadcast(parent, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        }
+
+
 
         if (this.play) {
             nBuilder.addAction(R.drawable.baseline_pause_black_48, "Pause",
