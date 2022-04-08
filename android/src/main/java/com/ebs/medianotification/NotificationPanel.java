@@ -61,7 +61,7 @@ public class NotificationPanel {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             pendingIntent = = PendingIntent.getBroadcast(parent, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
 
-          
+
 
         }else {
             pendingIntent = = PendingIntent.getBroadcast(parent, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
