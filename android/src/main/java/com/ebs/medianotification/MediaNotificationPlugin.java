@@ -96,15 +96,15 @@ public class MediaNotificationPlugin implements MethodCallHandler {
     }
 
     static void pause() {
-        nPanel.setPlay(false);
+       if(nPanel!=null) nPanel.setPlay(false);
     }
 
     static void play() {
-        nPanel.setPlay(true);
+        if(nPanel!=null)nPanel.setPlay(true);
     }
 
     private void hide() {
-        nPanel.notificationCancel();
+        if(nPanel!=null)nPanel.notificationCancel();
     }
 }
 
