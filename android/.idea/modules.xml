@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/medianotification.iml" filepath="$PROJECT_DIR$/.idea/modules/medianotification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/medianotification.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/medianotification.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/medianotification.main.iml" filepath="$PROJECT_DIR$/.idea/modules/medianotification.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/medianotification.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/medianotification.unitTest.iml" />
     </modules>
   </component>
 </project>

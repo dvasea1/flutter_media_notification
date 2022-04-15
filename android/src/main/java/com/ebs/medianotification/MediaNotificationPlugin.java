@@ -58,20 +58,22 @@ public class MediaNotificationPlugin implements MethodCallHandler {
   }
 
   public static void callEvent(String event) {
+if(MediaNotificationPlugin.channel != null){
+    MediaNotificationPlugin.channel.invokeMethod(event, null, new Result() {
+        @Override
+        public void success(Object o) {
+            // this will be called with o = "some string"
+            System.out.println(" action: ");
+        }
 
-      MediaNotificationPlugin.channel.invokeMethod(event, null, new Result() {
-          @Override
-          public void success(Object o) {
-              // this will be called with o = "some string"
-              System.out.println(" action: ");
-          }
+        @Override
+        public void error(String s, String s1, Object o) {}
 
-          @Override
-          public void error(String s, String s1, Object o) {}
+        @Override
+        public void notImplemented() {}
+    });
+}
 
-          @Override
-          public void notImplemented() {}
-      });
   }
 
   public static void show(String title, String author, boolean play) {
@@ -94,15 +96,15 @@ public class MediaNotificationPlugin implements MethodCallHandler {
   }
 
   static void pause(){
-      nPanel.setPlay(false);
+    if(nPanel!=null)  nPanel.setPlay(false);
   }
 
     static void play(){
-        nPanel.setPlay(true);
+        if(nPanel!=null) nPanel.setPlay(true);
     }
 
   private void hide() {
-      nPanel.notificationCancel();
+      if(nPanel!=null)   nPanel.notificationCancel();
   }
 }
 
