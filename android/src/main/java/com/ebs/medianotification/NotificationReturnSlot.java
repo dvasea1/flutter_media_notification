@@ -15,9 +15,13 @@ public class NotificationReturnSlot extends BroadcastReceiver {
                 String author = intent.getStringExtra("author");
                 String action = intent.getStringExtra("action");
 
-                MediaNotificationPlugin.show(title, author, action.equals("play"));
-               // System.out.println(" action "+action);
-                MediaNotificationPlugin.callEvent(action);
+                try{
+                    MediaNotificationPlugin.show(title, author, action.equals("play"));
+                   // System.out.println(" action "+action);
+                    MediaNotificationPlugin.callEvent(action);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
                 break;
         }
     }
